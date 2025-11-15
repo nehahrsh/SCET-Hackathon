@@ -5,6 +5,7 @@ import PatientInfo from './pages/PatientInfo';
 import Capture from './pages/Capture';
 import Questionnaire from './pages/Questionnaire';
 import Results from './pages/Results';
+import History from './pages/History';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/capture" element={<Capture />} />
         <Route path="/questionnaire" element={<Questionnaire />} />
         <Route path="/results" element={<Results />} />
+        <Route path="/history" element={<History />} />
       </Routes>
     </BrowserRouter>
   );

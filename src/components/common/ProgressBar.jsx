@@ -10,11 +10,11 @@ const ProgressBar = ({ current, total, labels = [] }) => {
         {labels.map((label, idx) => (
           <div
             key={idx}
-            className={`text-xs font-medium ${
+            className={`text-xs font-light ${
               idx < current
-                ? 'text-medical-600'
+                ? 'text-nurtura-600'
                 : idx === current
-                ? 'text-medical-700 font-semibold'
+                ? 'text-nurtura-700 font-medium'
                 : 'text-gray-400'
             }`}
           >
@@ -22,19 +22,19 @@ const ProgressBar = ({ current, total, labels = [] }) => {
           </div>
         ))}
       </div>
-      <div className="h-2 bg-gray-200 rounded-full overflow-hidden">
+      <div className="h-2 bg-nurtura-50 rounded-full overflow-hidden">
         <motion.div
-          className="h-full bg-gradient-to-r from-medical-500 to-medical-600"
+          className="h-full bg-gradient-to-r from-nurtura-400 to-rose-500"
           initial={{ width: 0 }}
           animate={{ width: `${percentage}%` }}
           transition={{ duration: 0.5, ease: 'easeOut' }}
         />
       </div>
       <div className="flex justify-between mt-1">
-        <span className="text-xs text-gray-500">
+        <span className="text-xs text-gray-500 font-light">
           Step {current} of {total}
         </span>
-        <span className="text-xs text-gray-500">{Math.round(percentage)}%</span>
+        <span className="text-xs text-gray-500 font-light">{Math.round(percentage)}%</span>
       </div>
     </div>
   );

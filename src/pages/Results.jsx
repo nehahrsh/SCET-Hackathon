@@ -93,7 +93,7 @@ const Results = () => {
           <motion.div
             animate={{ rotate: 360 }}
             transition={{ duration: 2, repeat: Infinity, ease: 'linear' }}
-            className="w-16 h-16 border-4 border-medical-200 border-t-medical-600 rounded-full"
+            className="w-16 h-16 border-4 border-nurtura-200 border-t-nurtura-600 rounded-full"
           />
           <p className="ml-4 text-lg font-medium text-gray-900">
             Calculating risk assessment...
@@ -110,7 +110,7 @@ const Results = () => {
           <p className="text-gray-600">No assessment data found.</p>
           <button
             onClick={() => navigate('/')}
-            className="mt-4 text-medical-600 hover:text-medical-700 font-medium"
+            className="mt-4 text-nurtura-600 hover:text-nurtura-700 font-medium"
           >
             Return to Home
           </button>
@@ -147,7 +147,7 @@ const Results = () => {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               onClick={handleExportPDF}
-              className="bg-medical-600 hover:bg-medical-700 text-white px-6 py-3 rounded-xl flex items-center gap-2 shadow-lg font-medium"
+              className="bg-nurtura-600 hover:bg-nurtura-700 text-white px-6 py-3 rounded-xl flex items-center gap-2 shadow-lg font-medium"
             >
               <Download className="w-5 h-5" />
               Export PDF Report
@@ -205,34 +205,34 @@ const Results = () => {
             className="bg-white rounded-2xl shadow-xl p-6 mb-6"
           >
             <div className="flex items-center gap-3 mb-4">
-              <Activity className="w-6 h-6 text-medical-600" />
+              <Activity className="w-6 h-6 text-nurtura-600" />
               <h3 className="text-xl font-semibold text-gray-900">Biometric Readings</h3>
             </div>
             <div className="grid md:grid-cols-4 gap-4">
-              <div className="bg-medical-50 rounded-lg p-4">
+              <div className="bg-nurtura-50 rounded-lg p-4">
                 <p className="text-sm text-gray-600 mb-1">Heart Rate</p>
-                <p className="text-2xl font-bold text-medical-700">
+                <p className="text-2xl font-bold text-nurtura-700">
                   {sessionData.vision.rppg.hr} <span className="text-sm font-normal">bpm</span>
                 </p>
               </div>
-              <div className="bg-medical-50 rounded-lg p-4">
+              <div className="bg-nurtura-50 rounded-lg p-4">
                 <p className="text-sm text-gray-600 mb-1">HRV</p>
-                <p className="text-2xl font-bold text-medical-700">
+                <p className="text-2xl font-bold text-nurtura-700">
                   {sessionData.vision.rppg.hrv} <span className="text-sm font-normal">ms</span>
                 </p>
               </div>
               {sessionData.vision.respiratoryRate && (
-                <div className="bg-medical-50 rounded-lg p-4">
+                <div className="bg-nurtura-50 rounded-lg p-4">
                   <p className="text-sm text-gray-600 mb-1">Respiratory Rate</p>
-                  <p className="text-2xl font-bold text-medical-700">
+                  <p className="text-2xl font-bold text-nurtura-700">
                     {sessionData.vision.respiratoryRate.respiratoryRate} <span className="text-sm font-normal">/min</span>
                   </p>
                 </div>
               )}
               {sessionData.vitals?.systolicBP && (
-                <div className="bg-medical-50 rounded-lg p-4">
+                <div className="bg-nurtura-50 rounded-lg p-4">
                   <p className="text-sm text-gray-600 mb-1">Blood Pressure</p>
-                  <p className="text-2xl font-bold text-medical-700">
+                  <p className="text-2xl font-bold text-nurtura-700">
                     {sessionData.vitals.systolicBP}/{sessionData.vitals.diastolicBP}
                     <span className="text-sm font-normal ml-1">mmHg</span>
                   </p>
@@ -260,7 +260,7 @@ const Results = () => {
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
             onClick={handleNewAssessment}
-            className="flex-1 bg-gradient-to-r from-medical-600 to-medical-700 text-white px-8 py-4 rounded-xl flex items-center justify-center gap-3 shadow-lg font-semibold"
+            className="flex-1 bg-gradient-to-r from-nurtura-600 to-nurtura-700 text-white px-8 py-4 rounded-xl flex items-center justify-center gap-3 shadow-lg font-semibold"
           >
             <Home className="w-5 h-5" />
             New Assessment
