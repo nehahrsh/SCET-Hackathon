@@ -127,8 +127,8 @@ const Capture = () => {
           className="bg-white rounded-2xl shadow-xl p-8"
         >
           <div className="flex items-center gap-3 mb-6">
-            <div className="bg-medical-100 p-3 rounded-lg">
-              <Video className="w-6 h-6 text-medical-600" />
+            <div className="bg-nurtura-100 p-3 rounded-lg">
+              <Video className="w-6 h-6 text-nurtura-600" />
             </div>
             <div>
               <h2 className="text-2xl font-bold text-gray-900">
@@ -152,7 +152,7 @@ const Capture = () => {
                     idx < currentStep
                       ? 'bg-green-500'
                       : idx === currentStep
-                      ? 'bg-medical-500'
+                      ? 'bg-nurtura-500'
                       : 'bg-gray-200'
                   }`}
                 />
@@ -175,7 +175,7 @@ const Capture = () => {
               <motion.div
                 animate={{ rotate: 360 }}
                 transition={{ duration: 2, repeat: Infinity, ease: 'linear' }}
-                className="w-16 h-16 border-4 border-medical-200 border-t-medical-600 rounded-full mx-auto mb-4"
+                className="w-16 h-16 border-4 border-nurtura-200 border-t-nurtura-600 rounded-full mx-auto mb-4"
               />
               <p className="text-lg font-medium text-gray-900">Processing video...</p>
               <p className="text-sm text-gray-500 mt-2">

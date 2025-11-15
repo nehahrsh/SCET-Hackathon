@@ -163,7 +163,7 @@ const VideoCapture = ({
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             onClick={startRecording}
-            className="bg-medical-600 hover:bg-medical-700 text-white px-8 py-3 rounded-xl flex items-center gap-3 mx-auto shadow-lg font-medium"
+            className="bg-nurtura-600 hover:bg-nurtura-700 text-white px-8 py-3 rounded-xl flex items-center gap-3 mx-auto shadow-lg font-medium"
           >
             <Camera className="w-5 h-5" />
             Start {duration}s Capture

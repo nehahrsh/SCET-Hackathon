@@ -83,8 +83,8 @@ const Questionnaire = () => {
           className="bg-white rounded-2xl shadow-xl p-8"
         >
           <div className="flex items-center gap-3 mb-6">
-            <div className="bg-medical-100 p-3 rounded-lg">
-              <ClipboardList className="w-6 h-6 text-medical-600" />
+            <div className="bg-nurtura-100 p-3 rounded-lg">
+              <ClipboardList className="w-6 h-6 text-nurtura-600" />
             </div>
             <div>
               <h2 className="text-2xl font-bold text-gray-900">Clinical Questionnaire</h2>
@@ -103,7 +103,7 @@ const Questionnaire = () => {
                     name="headache"
                     checked={formData.headache}
                     onChange={handleChange}
-                    className="w-4 h-4 text-medical-600 rounded focus:ring-medical-500"
+                    className="w-4 h-4 text-nurtura-600 rounded focus:ring-nurtura-500"
                   />
                   <span className="text-sm text-gray-700">Severe or persistent headache</span>
                 </label>
@@ -114,7 +114,7 @@ const Questionnaire = () => {
                     name="visualChanges"
                     checked={formData.visualChanges}
                     onChange={handleChange}
-                    className="w-4 h-4 text-medical-600 rounded focus:ring-medical-500"
+                    className="w-4 h-4 text-nurtura-600 rounded focus:ring-nurtura-500"
                   />
                   <span className="text-sm text-gray-700">Visual changes (blurred vision, spots, flashing lights)</span>
                 </label>
@@ -125,7 +125,7 @@ const Questionnaire = () => {
                     name="ruqPain"
                     checked={formData.ruqPain}
                     onChange={handleChange}
-                    className="w-4 h-4 text-medical-600 rounded focus:ring-medical-500"
+                    className="w-4 h-4 text-nurtura-600 rounded focus:ring-nurtura-500"
                   />
                   <span className="text-sm text-gray-700">Right upper quadrant pain</span>
                 </label>
@@ -136,7 +136,7 @@ const Questionnaire = () => {
                     name="suddenEdema"
                     checked={formData.suddenEdema}
                     onChange={handleChange}
-                    className="w-4 h-4 text-medical-600 rounded focus:ring-medical-500"
+                    className="w-4 h-4 text-nurtura-600 rounded focus:ring-nurtura-500"
                   />
                   <span className="text-sm text-gray-700">Sudden swelling (face, hands, feet)</span>
                 </label>
@@ -153,7 +153,7 @@ const Questionnaire = () => {
                     name="excessiveThirst"
                     checked={formData.excessiveThirst}
                     onChange={handleChange}
-                    className="w-4 h-4 text-medical-600 rounded focus:ring-medical-500"
+                    className="w-4 h-4 text-nurtura-600 rounded focus:ring-nurtura-500"
                   />
                   <span className="text-sm text-gray-700">Excessive thirst</span>
                 </label>
@@ -164,7 +164,7 @@ const Questionnaire = () => {
                     name="frequentUrination"
                     checked={formData.frequentUrination}
                     onChange={handleChange}
-                    className="w-4 h-4 text-medical-600 rounded focus:ring-medical-500"
+                    className="w-4 h-4 text-nurtura-600 rounded focus:ring-nurtura-500"
                   />
                   <span className="text-sm text-gray-700">Frequent urination (more than usual)</span>
                 </label>
@@ -175,7 +175,7 @@ const Questionnaire = () => {
                     name="unusualFatigue"
                     checked={formData.unusualFatigue}
                     onChange={handleChange}
-                    className="w-4 h-4 text-medical-600 rounded focus:ring-medical-500"
+                    className="w-4 h-4 text-nurtura-600 rounded focus:ring-nurtura-500"
                   />
                   <span className="text-sm text-gray-700">Unusual fatigue</span>
                 </label>
@@ -186,7 +186,7 @@ const Questionnaire = () => {
                     name="blurredVision"
                     checked={formData.blurredVision}
                     onChange={handleChange}
-                    className="w-4 h-4 text-medical-600 rounded focus:ring-medical-500"
+                    className="w-4 h-4 text-nurtura-600 rounded focus:ring-nurtura-500"
                   />
                   <span className="text-sm text-gray-700">Blurred vision</span>
                 </label>
@@ -203,7 +203,7 @@ const Questionnaire = () => {
                     name="vaginalBleeding"
                     checked={formData.vaginalBleeding}
                     onChange={handleChange}
-                    className="w-4 h-4 text-medical-600 rounded focus:ring-medical-500"
+                    className="w-4 h-4 text-nurtura-600 rounded focus:ring-nurtura-500"
                   />
                   <span className="text-sm text-gray-700">Vaginal bleeding</span>
                 </label>
@@ -216,7 +216,7 @@ const Questionnaire = () => {
                         name="bleedingPainless"
                         checked={formData.bleedingPainless}
                         onChange={handleChange}
-                        className="w-4 h-4 text-medical-600 rounded focus:ring-medical-500"
+                        className="w-4 h-4 text-nurtura-600 rounded focus:ring-nurtura-500"
                       />
                       <span className="text-sm text-gray-700">Painless bleeding</span>
                     </label>
@@ -227,7 +227,7 @@ const Questionnaire = () => {
                         name="bleedingBright"
                         checked={formData.bleedingBright}
                         onChange={handleChange}
-                        className="w-4 h-4 text-medical-600 rounded focus:ring-medical-500"
+                        className="w-4 h-4 text-nurtura-600 rounded focus:ring-nurtura-500"
                       />
                       <span className="text-sm text-gray-700">Bright red blood</span>
                     </label>
@@ -240,7 +240,7 @@ const Questionnaire = () => {
                         name="bleedingAmount"
                         value={formData.bleedingAmount}
                         onChange={handleChange}
-                        className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-medical-500"
+                        className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-nurtura-500"
                       >
                         <option value="">Select amount</option>
                         <option value="spotting">Spotting</option>
@@ -258,7 +258,7 @@ const Questionnaire = () => {
                     name="decreasedFetalMovement"
                     checked={formData.decreasedFetalMovement}
                     onChange={handleChange}
-                    className="w-4 h-4 text-medical-600 rounded focus:ring-medical-500"
+                    className="w-4 h-4 text-nurtura-600 rounded focus:ring-nurtura-500"
                   />
                   <span className="text-sm text-gray-700">Decreased fetal movement</span>
                 </label>
@@ -269,7 +269,7 @@ const Questionnaire = () => {
                     name="dizziness"
                     checked={formData.dizziness}
                     onChange={handleChange}
-                    className="w-4 h-4 text-medical-600 rounded focus:ring-medical-500"
+                    className="w-4 h-4 text-nurtura-600 rounded focus:ring-nurtura-500"
                   />
                   <span className="text-sm text-gray-700">Dizziness or lightheadedness</span>
                 </label>
@@ -289,7 +289,7 @@ const Questionnaire = () => {
                     name="systolicBP"
                     value={formData.systolicBP}
                     onChange={handleChange}
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-medical-500"
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-nurtura-500"
                     placeholder="120"
                   />
                 </div>
@@ -303,7 +303,7 @@ const Questionnaire = () => {
                     name="diastolicBP"
                     value={formData.diastolicBP}
                     onChange={handleChange}
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-medical-500"
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-nurtura-500"
                     placeholder="80"
                   />
                 </div>
@@ -317,7 +317,7 @@ const Questionnaire = () => {
                     name="bloodGlucose"
                     value={formData.bloodGlucose}
                     onChange={handleChange}
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-medical-500"
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-nurtura-500"
                     placeholder="100"
                   />
                 </div>
@@ -333,7 +333,7 @@ const Questionnaire = () => {
                 name="fetalPresentation"
                 value={formData.fetalPresentation}
                 onChange={handleChange}
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-medical-500"
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-nurtura-500"
               >
                 <option value="">Unknown/Not assessed</option>
                 <option value="cephalic">Cephalic (head down)</option>
@@ -352,7 +352,7 @@ const Questionnaire = () => {
                 value={formData.notes}
                 onChange={handleChange}
                 rows="3"
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-medical-500"
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-nurtura-500"
                 placeholder="Any additional observations or concerns..."
               />
             </div>
@@ -372,7 +372,7 @@ const Questionnaire = () => {
                 type="submit"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
-                className="flex-1 bg-gradient-to-r from-medical-600 to-medical-700 text-white px-6 py-3 rounded-xl flex items-center justify-center gap-2 font-semibold shadow-lg"
+                className="flex-1 bg-gradient-to-r from-nurtura-600 to-nurtura-700 text-white px-6 py-3 rounded-xl flex items-center justify-center gap-2 font-semibold shadow-lg"
               >
                 Generate Risk Assessment
                 <ArrowRight className="w-5 h-5" />

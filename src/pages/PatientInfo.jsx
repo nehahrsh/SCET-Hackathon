@@ -80,8 +80,8 @@ const PatientInfo = () => {
           className="bg-white rounded-2xl shadow-xl p-8"
         >
           <div className="flex items-center gap-3 mb-6">
-            <div className="bg-medical-100 p-3 rounded-lg">
-              <User className="w-6 h-6 text-medical-600" />
+            <div className="bg-nurtura-100 p-3 rounded-lg">
+              <User className="w-6 h-6 text-nurtura-600" />
             </div>
             <div>
               <h2 className="text-2xl font-bold text-gray-900">Patient Information</h2>
@@ -102,7 +102,7 @@ const PatientInfo = () => {
                   required
                   value={formData.name}
                   onChange={handleChange}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-medical-500 focus:border-transparent"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-nurtura-500 focus:border-transparent"
                   placeholder="Full name"
                 />
               </div>
@@ -119,7 +119,7 @@ const PatientInfo = () => {
                   max="60"
                   value={formData.age}
                   onChange={handleChange}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-medical-500 focus:border-transparent"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-nurtura-500 focus:border-transparent"
                   placeholder="Age"
                 />
               </div>
@@ -138,7 +138,7 @@ const PatientInfo = () => {
                   max="42"
                   value={formData.gestationalWeeks}
                   onChange={handleChange}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-medical-500 focus:border-transparent"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-nurtura-500 focus:border-transparent"
                   placeholder="Weeks"
                 />
               </div>
@@ -153,7 +153,7 @@ const PatientInfo = () => {
                   step="0.1"
                   value={formData.weight}
                   onChange={handleChange}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-medical-500 focus:border-transparent"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-nurtura-500 focus:border-transparent"
                   placeholder="Weight"
                 />
               </div>
@@ -167,7 +167,7 @@ const PatientInfo = () => {
                   name="height"
                   value={formData.height}
                   onChange={handleChange}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-medical-500 focus:border-transparent"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-nurtura-500 focus:border-transparent"
                   placeholder="Height"
                 />
               </div>
@@ -196,7 +196,7 @@ const PatientInfo = () => {
                   max="20"
                   value={formData.parity}
                   onChange={handleChange}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-medical-500 focus:border-transparent"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-nurtura-500 focus:border-transparent"
                   placeholder="0 for first pregnancy"
                 />
               </div>
@@ -208,7 +208,7 @@ const PatientInfo = () => {
                     name="firstPregnancy"
                     checked={formData.firstPregnancy}
                     onChange={handleChange}
-                    className="w-4 h-4 text-medical-600 rounded focus:ring-medical-500"
+                    className="w-4 h-4 text-nurtura-600 rounded focus:ring-nurtura-500"
                   />
                   <span className="text-sm text-gray-700">First pregnancy</span>
                 </label>
@@ -219,7 +219,7 @@ const PatientInfo = () => {
                     name="previousPreeclampsia"
                     checked={formData.previousPreeclampsia}
                     onChange={handleChange}
-                    className="w-4 h-4 text-medical-600 rounded focus:ring-medical-500"
+                    className="w-4 h-4 text-nurtura-600 rounded focus:ring-nurtura-500"
                   />
                   <span className="text-sm text-gray-700">Previous preeclampsia</span>
                 </label>
@@ -230,7 +230,7 @@ const PatientInfo = () => {
                     name="previousGDM"
                     checked={formData.previousGDM}
                     onChange={handleChange}
-                    className="w-4 h-4 text-medical-600 rounded focus:ring-medical-500"
+                    className="w-4 h-4 text-nurtura-600 rounded focus:ring-nurtura-500"
                   />
                   <span className="text-sm text-gray-700">Previous gestational diabetes</span>
                 </label>
@@ -241,7 +241,7 @@ const PatientInfo = () => {
                     name="previousCSection"
                     checked={formData.previousCSection}
                     onChange={handleChange}
-                    className="w-4 h-4 text-medical-600 rounded focus:ring-medical-500"
+                    className="w-4 h-4 text-nurtura-600 rounded focus:ring-nurtura-500"
                   />
                   <span className="text-sm text-gray-700">Previous cesarean section</span>
                 </label>
@@ -256,7 +256,7 @@ const PatientInfo = () => {
                       value={formData.numberOfCSections}
                       onChange={handleChange}
                       placeholder="Number of C-sections"
-                      className="w-48 px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-medical-500 text-sm"
+                      className="w-48 px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-nurtura-500 text-sm"
                     />
                   </div>
                 )}
@@ -267,7 +267,7 @@ const PatientInfo = () => {
                     name="previousLargeBaby"
                     checked={formData.previousLargeBaby}
                     onChange={handleChange}
-                    className="w-4 h-4 text-medical-600 rounded focus:ring-medical-500"
+                    className="w-4 h-4 text-nurtura-600 rounded focus:ring-nurtura-500"
                   />
                   <span className="text-sm text-gray-700">Previous baby {'>'} 4kg</span>
                 </label>
@@ -278,7 +278,7 @@ const PatientInfo = () => {
                     name="previousPlacentalIssue"
                     checked={formData.previousPlacentalIssue}
                     onChange={handleChange}
-                    className="w-4 h-4 text-medical-600 rounded focus:ring-medical-500"
+                    className="w-4 h-4 text-nurtura-600 rounded focus:ring-nurtura-500"
                   />
                   <span className="text-sm text-gray-700">Previous placental issue</span>
                 </label>
@@ -289,7 +289,7 @@ const PatientInfo = () => {
                     name="familyHistoryDiabetes"
                     checked={formData.familyHistoryDiabetes}
                     onChange={handleChange}
-                    className="w-4 h-4 text-medical-600 rounded focus:ring-medical-500"
+                    className="w-4 h-4 text-nurtura-600 rounded focus:ring-nurtura-500"
                   />
                   <span className="text-sm text-gray-700">Family history of diabetes</span>
                 </label>
@@ -300,7 +300,7 @@ const PatientInfo = () => {
                     name="pcos"
                     checked={formData.pcos}
                     onChange={handleChange}
-                    className="w-4 h-4 text-medical-600 rounded focus:ring-medical-500"
+                    className="w-4 h-4 text-nurtura-600 rounded focus:ring-nurtura-500"
                   />
                   <span className="text-sm text-gray-700">PCOS (Polycystic Ovary Syndrome)</span>
                 </label>
@@ -322,7 +322,7 @@ const PatientInfo = () => {
                 type="submit"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
-                className="flex-1 bg-gradient-to-r from-medical-600 to-medical-700 text-white px-6 py-3 rounded-xl flex items-center justify-center gap-2 font-semibold shadow-lg"
+                className="flex-1 bg-gradient-to-r from-nurtura-600 to-nurtura-700 text-white px-6 py-3 rounded-xl flex items-center justify-center gap-2 font-semibold shadow-lg"
               >
                 Continue to Video Capture
                 <ArrowRight className="w-5 h-5" />
